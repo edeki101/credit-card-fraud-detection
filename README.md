@@ -8,7 +8,7 @@ Identify fraudulent credit card transactions using anomaly detection (Isolation 
 |---|---|---|
 | 1 | GitHub repository | https://github.com/edeki101/credit-card-fraud-detection |
 | 2 | Jupyter notebook | [fraud_detection.ipynb](fraud_detection.ipynb) |
-| 3 | Streamlit app | Coming soon (deployment steps below) |
+| 3 | Streamlit app | https://edeki101-credit-card-fraud-detection.streamlit.app/ |
 | 4 | Confusion matrix and other charts | [outputs/](outputs/) |
 | 5 | Project report (2 pages, PDF) | [report/Fraud_Detection_Report.pdf](report/Fraud_Detection_Report.pdf) |
 
