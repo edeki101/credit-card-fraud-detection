@@ -1,0 +1,105 @@
+{
+  "dataset": "Kaggle Credit Card Fraud Detection (mlg-ulb/creditcardfraud)",
+  "rows_raw": 284807,
+  "duplicates_removed": 1081,
+  "rows_used": 283726,
+  "fraud_total": 473,
+  "train_rows": 226980,
+  "test_rows": 56746,
+  "test_fraud": 95,
+  "features": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount_log"
+  ],
+  "threshold": 0.9759509563446045,
+  "xgb_best_iteration": 49,
+  "metrics": [
+    {
+      "Model": "Isolation Forest",
+      "ROC_AUC": 0.9396201488522987,
+      "PR_AUC": 0.1265231920815337,
+      "Precision": 0.22429906542056074,
+      "Recall": 0.25263157894736843,
+      "F1": 0.2376237623762376
+    },
+    {
+      "Model": "Local Outlier Factor",
+      "ROC_AUC": 0.6920405548654783,
+      "PR_AUC": 0.008790927209758952,
+      "Precision": 0.021052631578947368,
+      "Recall": 0.021052631578947368,
+      "F1": 0.021052631578947368
+    },
+    {
+      "Model": "XGBoost (threshold 0.5)",
+      "ROC_AUC": 0.9639635663977688,
+      "PR_AUC": 0.7660412047775491,
+      "Precision": 0.21944444444444444,
+      "Recall": 0.8315789473684211,
+      "F1": 0.34725274725274724
+    },
+    {
+      "Model": "XGBoost (tuned threshold 0.98)",
+      "ROC_AUC": 0.9639635663977688,
+      "PR_AUC": 0.7660412047775491,
+      "Precision": 0.9130434782608695,
+      "Recall": 0.6631578947368421,
+      "F1": 0.7682926829268293
+    }
+  ],
+  "confusion_matrices": {
+    "XGBoost, threshold 0.5": [
+      [
+        56370,
+        281
+      ],
+      [
+        16,
+        79
+      ]
+    ],
+    "XGBoost, tuned threshold 0.98": [
+      [
+        56645,
+        6
+      ],
+      [
+        32,
+        63
+      ]
+    ]
+  },
+  "confusion_tuned": {
+    "TN": 56645,
+    "FP": 6,
+    "FN": 32,
+    "TP": 63
+  }
+}
